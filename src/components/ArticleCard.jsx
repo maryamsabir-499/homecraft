@@ -12,7 +12,7 @@ export default function ArticleCard({ article }) {
   return (
     <article className="group overflow-hidden rounded-lg bg-white shadow-sm transition hover:shadow-lg">
       <Link to={`/blog/${article.slug}`} aria-label={article.title}>
-        <div className="aspect-[3/2] overflow-hidden bg-secondary/20">
+        <div className="aspect-3/2 overflow-hidden bg-secondary/20">
           <img
             src={article.image}
             alt={article.imageAlt}
