@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 
-const SITE_URL = 'https://yourdomain.com' 
+const SITE_URL = 'https://homecraft-psi.vercel.app' 
 
 export default function SEO({ title, description, path = '/', image }) {
   const url = `${SITE_URL}${path}`

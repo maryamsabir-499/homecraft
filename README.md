@@ -2,7 +2,7 @@
 
 A modern blog about interior design, room ideas, furniture guides and home organization.
 
-**Live site:** (add your Vercel URL here)
+   **Live site:** https://homecraft-psi.vercel.app
 
 ## Features
 
