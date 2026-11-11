@@ -36,13 +36,12 @@ export default function TiltImage({ src, alt, width, height }) {
           transition: active ? 'transform 0.1s ease-out' : 'transform 0.6s ease',
         }}
       >
-        {/* Back frame (sits behind the photo) */}
+               {/* Soft glow behind the photo (no hard line) */}
         <div
           aria-hidden="true"
-          className="absolute inset-0 rounded-3xl border-2 border-accent"
-          style={{ transform: 'translateZ(-50px) translate(22px, 22px)' }}
+          className="absolute inset-0 rounded-3xl bg-accent/40 blur-2xl"
+          style={{ transform: 'translateZ(-60px) scale(0.95)' }}
         />
-
         {/* Main photo */}
         <img
           src={src}
@@ -56,7 +55,7 @@ export default function TiltImage({ src, alt, width, height }) {
 
         {/* Floating badge (sits in front of the photo) */}
         <div
-          className="absolute -bottom-5 -left-5 rounded-xl bg-bg px-5 py-3 shadow-xl"
+          className="absolute -bottom-4 -left-4 rounded-xl bg-bg px-5 py-3 shadow-xl"
           style={{ transform: 'translateZ(70px)' }}
         >
           <p className="text-xs font-semibold uppercase tracking-wider text-secondary">HomeCraft</p>
