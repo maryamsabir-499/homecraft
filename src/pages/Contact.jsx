@@ -2,7 +2,7 @@ import { useState } from 'react'
 import SEO from '../components/SEO'
 
 // Replace with your own Formspree form ID (see instructions)
-const FORM_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID'
+const FORM_ENDPOINT = 'https://formspree.io/f/xyzabcde'
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' })
